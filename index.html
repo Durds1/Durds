@@ -75,38 +75,53 @@ header {
   align-items: center;
   color: white;
 }
-      .hero-content {
-  max-width: 760px;
-  padding: 70px 40px;
+     .hero-content {
+  max-width: 720px;
+  padding: 50px 60px;
   margin-left: 80px;
-  background: rgba(0,0,0,0.25);
-  border-radius: 12px;
+
+  background: rgba(15,23,42,0.55);
+  backdrop-filter: blur(8px);
+
+  border-radius: 16px;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+
+  border: 1px solid rgba(255,255,255,0.15);
 }
 
     .tag {
-      display: inline-block;
-      background: rgba(56, 189, 248, 0.18);
-      border: 1px solid rgba(56, 189, 248, 0.35);
-      color: #e0f2fe;
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 14px;
-      margin-bottom: 18px;
-    }
+  display: inline-block;
 
-    .hero h1 {
-      font-size: 52px;
-      line-height: 1.1;
-      margin-bottom: 18px;
-    }
+  background: rgba(56,189,248,0.25);
 
-    .hero p {
-      font-size: 20px;
-      max-width: 650px;
-      color: #e2e8f0;
-      margin-bottom: 28px;
-    }
+  border: 1px solid rgba(56,189,248,0.45);
 
+  color: #e0f2fe;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  font-size: 14px;
+
+  margin-bottom: 20px;
+
+  font-weight: 600;
+}
+   .hero h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+   .hero p {
+  font-size: 20px;
+  max-width: 600px;
+  color: #e2e8f0;
+  margin-bottom: 30px;
+}
     .hero-buttons {
       display: flex;
       gap: 14px;
@@ -571,6 +586,22 @@ header {
   <a class="whatsapp-float" href="https://wa.me/5564993274109" target="_blank" aria-label="WhatsApp">
     ✆
   </a>
+  @media (max-width: 768px){
+
+.hero-content{
+  margin:20px;
+  padding:35px;
+}
+
+.hero h1{
+  font-size:32px;
+}
+
+.hero p{
+  font-size:18px;
+}
+
+}
 
 </body>
 </html>
