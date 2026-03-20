@@ -503,6 +503,76 @@ margin-bottom:8px;
 font-size:14px;
 color:#64748b;
 }
+      .features{
+max-width:1200px;
+margin:100px auto;
+padding:0 40px;
+text-align:center;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:10px;
+color:#0f172a;
+}
+
+.section-subtitle{
+color:#64748b;
+margin-bottom:50px;
+}
+
+/* GRID DIFERENTE (NÃO SIMÉTRICO) */
+.features-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+grid-auto-rows:180px;
+gap:25px;
+}
+
+/* CARD PADRÃO */
+.feature-card{
+background:white;
+padding:25px;
+border-radius:16px;
+box-shadow:0 15px 35px rgba(0,0,0,0.08);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:flex-start;
+text-align:left;
+transition:0.25s;
+}
+
+.feature-card:hover{
+transform:translateY(-6px);
+box-shadow:0 25px 45px rgba(0,0,0,0.12);
+}
+
+/* TAMANHOS DIFERENTES */
+.feature-card.large{
+grid-column:span 2;
+grid-row:span 2;
+}
+
+.feature-card.wide{
+grid-column:span 2;
+}
+
+/* TEXTO */
+.feature-card h3{
+font-size:20px;
+margin-bottom:8px;
+}
+
+.feature-card p{
+font-size:14px;
+color:#64748b;
+}
+
+.icon{
+font-size:26px;
+margin-bottom:10px;
+}
   </style>
 </head>
 <body>
